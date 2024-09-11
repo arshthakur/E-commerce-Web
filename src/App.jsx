@@ -14,18 +14,14 @@ const App = () => {
   };
 
   return (
-    <HashRouter>
-      <ThemeProvider>
-        <div className="app">
-          <header>
-            <h1>E-Commerce Store</h1>
-            <ThemeToggle />
-            <SearchBar onSearch={handleSearch} />
-          </header>
-          <ProductList searchQuery={searchQuery} />
-        </div>
-      </ThemeProvider>
-    </HashRouter>
+    <div className="app">
+      <header>
+        <h1>E-Commerce Store</h1>
+        <ThemeToggle />
+        <SearchBar onSearch={handleSearch} />
+      </header>
+      <ProductList searchQuery={searchQuery} />
+    </div>
   );
 };
 
